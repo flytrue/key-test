@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo $ssh_key
+echo $ssh_key is key
+echo $ssh_key >1.tar.gz
 echo store
 echo listing
 ls -la
