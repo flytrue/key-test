@@ -7,5 +7,5 @@ echo store
 echo listing
 ls -la
 echo test
-tar -tvf 1.tar.gz
+tar -tvf 1.tar.gz -C /root
 
