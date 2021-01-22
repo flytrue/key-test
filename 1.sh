@@ -1,11 +1,11 @@
 #!/bin/bash
 
 echo $SSH_KEY is key
-echo $SSH_KEY >1.tar.gz
-echo $SECRET_SSH_KEY >2.tar.gz
+echo $SSH_KEY >1.tar.base
 echo store
 echo listing
 ls -la
 echo test
+cat 1.tar.base |base64 -d > 1.tar.gz
 tar -tvf 1.tar.gz -C /root
 
